@@ -1,0 +1,214 @@
+1. What is Java? 
+--> Java is a high level ,object oriented , platform independent programming language .
+    Java was developed in 1991 by James Gosling at Sun MicroSystems, and was known as oak
+	Later , Oak was named as Java in 1995.
+	Features of java ,-
+	a. Platform Independent 
+	b. Simple 
+	c. Robust 
+	d. Distributed
+	e. Multithreaded
+	f. High Performance 
+	g. Secure 
+	h. Object Oriented 
+	i. Dynamic
+	
+2. Is Java platform dependent or independent? 
+--> Java is Platform independent .
+    Java programs are compiled into byte code , which can run on any system that has JVM installed
+
+3. What is JVM? 
+--> JVM is a Java Virtual Machine
+    is a virtual machine that executes Java bytecode
+    It is Platform dependent , means different OS have different JVM implementation .
+	Also provide memory management , security and run time environment for java programs 
+	
+4. What is JDK and JRE? 
+--> JDK is Java Development Kit
+        It is used by developers to develop the Java applications.
+	    JDK = JRE + Development tools(Compiler , debugger)
+    JRE is Java Runtime Environment 
+	    provides environment to run Java program 
+		JRE = JVM + core libraries needed to execute .class file
+	It is used by user or client to run the program available in .class file
+	
+5. Why is Java called “Write Once, Run Anywhere”? 
+--> Java source code is compiled into platform-independent bytecode , this bytecode can be executed on OS  
+    like Windows, Linux , MacOS , etc. , hence it is called as Write Once, Run Anywhere.
+
+6. What is a class in Java? 
+--> Class is blueprint or template used to create object(instance) .
+    Is a container with collection of - 
+	 i)   variables
+	 ii)  methods
+	 iii) constructors
+	 iv)  instance block 
+	 v)   static block
+    It is a logical entity . eg. Car 
+
+7. What is an object? 
+--> Object is a instance of class.
+    Object has its own state and behaviour.(state = data , behaviour = operations) 
+    Object is a real world entity. eg. Swift , Creta ,etc.
+
+8. What is the main method in Java? 
+--> Execution of any java program starts with main method.
+    Main method in java is the entry point where the execution of program starts . 
+    without main method the program will be compiled. It will show an 
+	error at run time ,main method not found - declare main method as 'public static void main(String[] args'
+	Syntax , public static void main(String[] args){}
+	these syntax is very strict , but we can change,- 
+	the name of args , 
+	can change the order of access modifiers,
+	can use var-arg parameter instead of [] ,
+	can declare main method with final , synchronized , strictfp
+	
+9. What is the use of System.out.println()?
+--> It is used to print the message on output screen/console.
+    a.System - is a predefined class in java present in java.lang package 
+               used to provide access to system resources like input , ouput ,memory.
+	b.out - is a static object (PrintStream object) present in System class
+            it represent standard output stream.	
+	c.print - is a method of PrintStream class.
+	          it prints the data and the cursor will remain on same line
+	d.println - is a method of PrintStream class.
+	            it prints the data and move the cursor to next line
+	
+11. What are data types in Java? 
+--> Data types specify the type of data the variable can store.
+    Data types is classified as - 
+	a. Primitive Data type (pre-defined)- are data types that can work or hold single value at a time.
+	   - it consists of two types ,- 
+	      i) Numeric data type - are data types that can hold numeric value.
+		     - it consists of two types ,-
+			    a)integer values - are data types that can hold integer value.
+				  - it consists of - byte , short , int , long
+				b)flaot values - are data types that can hold decimal value.
+				  - it consists of - float , double 
+		  ii) Non Numeric data type - are data types that can hold non-numeric value.
+		     - it consists of - char , boolean 
+    b. Non-primitive Data type(user defined) - are data types that can hold more than one value at a time.
+	   - it consists of - Array , String , Class , etc.
+
+12. Give examples of primitive data types. 
+--> There are 8 primitive data types they are ,-
+    byte , short , int , long , float , double , char , boolean.
+
+13. What is a variable? 
+--> A variable is a named memory container/location that stores the data value.
+
+14. How do you declare a variable in Java? 
+--> int x;
+
+15. What is the difference between int and float? 
+--> int and float both are Primitive Data types.
+    int and float are numeric data type 
+	int is used to store integer values.
+	float is used to store decimal/float values  
+    size of int and float is 4 bytes .
+    The range of int is -2^31 -1 to 2^31
+    The range of float is -3.4e38 to 3.4e38
+	float value will require a suffix as f;
+	int does not require any suffix.
+	Though they have same size of memory but the memory management is different in both data type.
+
+16. What is type casting? 
+--> Type casting is basically converting one data type into another data type.
+    There are two types of type casting they are ,-
+    a. Implicit type casting - done by JVM  
+    b. Explicit type casting - done by developer 
+
+17. What is the default value of int? 
+--> 0
+
+18. What is a keyword in Java? 
+--> keyword are special reserved words in java that represent some meaning or functionality .
+    There are 53 keywords in java:
+	a. Data types(8) : byte , short , char , int , long , float , double  , boolean
+	b. Flow control(10): if , else , switch , case , break , default , for , while , do , continue , default  
+    c. Modifiers(11) : public , static , private , protected , synchronized , strictfp , volatile , transient , abstract , final , native   	
+    d. Exception Handling(5) : try , catch , throw , throws ,finally
+	e. Class related(6) : class , implements , interface , package , extends , import   
+    f. Object related(4) : new , this ,instanceof , super 
+	g. return type(1) : return
+	h. Unused keywords(2) : goto , const
+	i. java 5.0(2) : enum , assert 
+	j. state level(3) : true , false , null
+
+19. Can we use reserved keywords as variable names? 
+--> No
+
+20. What is the difference between = and ==?
+--> =  , is used to assign a value to a variable.
+        stores a value in variable 
+    == , is used to compare two values .
+	     check whether a condition is true or false  	
+	
+21. What is an if statement? 
+--> is a decision making conditional statement used to execute the block of code only if the condition is true
+    we can use else to execute the block of code if the coondition is false	
+   	We can have nested if else also , the nearest else block to the if will be executing the else block if condition is false
+    	
+22. Difference between if and switch? 
+--> if - is used to check any type of condition
+       - works with all data types and expressions  
+    switch - is used to check multiple fixed value  
+	       - works with ,-(1.4) byte , short , char ,int
+                         -(1.5) Wrapper classes , enum 		   
+						 -(1.7) String 
+
+23. What is a loop? 
+--> used to execute a block of code repeatedly until the condition is false 
+
+24. Types of loops in Java? 
+--> a. for(initialization ;condition ;increment/decrement ){ } 
+       - is used when we know starting , ending and increment/decrement  
+    b. while(condition){ }
+	   - is used when we dont know number of iterations 
+	c. do{ }while(condition);
+	   - is used when we want to execute once compulsoryly and then check the condition
+    d. Enhanced for loop(1.5) - for ( : ){ } 
+	   - used only with Arrays and collections	
+
+25. Difference between for loop and while loop? 
+--> for loop - is used when number of iterations are known
+             - used for counter controlled loops
+    while loop - is used when number of iterations are not known
+               - used for condition controlled loop
+			   
+26. What is break statement? 
+--> used to terminate the loop or switch completely 
+    control goes outside the loop
+    break can be used ,-
+    a.inside switch to fall through 
+    b.inside loops to break execution based some conditions
+	c.labelled blocks to break blocks based on some conditions.
+	
+ 27. What is continue statement?
+--> used to skip the current iteration and continue for next iteration   
+    control goes to the beginning of the loop
+    used only in loops 
+	
+28. What will happen if we don’t write the main method? 
+--> without main method the program will be compiled . It will show an 
+	error at run time ,main method not found - declare main method as 'public static void main(String[] args'	
+	
+29. Can we run a Java program without class? 
+--> No . JVM executes code that is part of Class .
+
+30. What happens if we don’t compile a Java program? 
+--> It will not generate a .class file(byte code).
+    JVM executes only complied byte code , so the program can not run or execute 
+	
+31. Can a variable change its data type? 
+--> No. A variable cannot change its data type once it is declared.
+    However, the value stored in a variable can be converted to another data type using type casting.
+	type casting converts the value, not the variable itself.
+	
+32. What is the size of int in Java? 
+--> 4 bytes 
+
+33. Why Java does not support pointers directly? 
+--> To provide better security and and simplicity in programming
+    Java avoids pointers by using references and automatic memory management (Garbage Collection).
+    Also, the JVM handles memory allocation and deallocation internally,so programmers do not need to work with pointers.	
